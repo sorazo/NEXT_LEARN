@@ -9,6 +9,8 @@ import {
     List,
     ListItem,
     Contents,
+    Counter,
+    Toggle,
 } from "@/components/lesson3";
 
 export const metadata: Metadata = {
@@ -55,6 +57,13 @@ export default function Page() {
             <Image src="/monhan.png" width={150} height={150} alt="" priority />
             <SectionTitle>リンクの練習</SectionTitle>
             <Link href="/">トップページ</Link>
+            <SectionTitle>カウンター</SectionTitle>
+            <Counter />
+            <SectionTitle>トグル</SectionTitle>
+            {/* opened={true}初めから開いている状態にしたいなら */}
+            <Toggle title="トグルボタン" opened={true}>
+                コンテンツ
+            </Toggle>
         </Contents>
     );
 }
