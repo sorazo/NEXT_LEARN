@@ -45,7 +45,7 @@ export const LoginForm: React.FC = () => {
 
     return (
         <>
-            {serverError && <div>不正な操作が行われました</div>}
+            {serverError && <div>不正な操作が行われました!</div>}
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>ID</label>
                 <br />
